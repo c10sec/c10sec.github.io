@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>#𝗜𝗥𝗖 || 𝗫𝗦𝗦 𝗖𝗛𝗔𝗟𝗟𝗘𝗡𝗚𝗘</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="mostrarPistas.js"></script>
+<head>
+<body>
+
+<br>
+
+<h1>IRC</h1>
+
+<script>
+  var today = new Date();
+  var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000);
+
+  function setCookie(name, value)
+  {
+    document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+  }
+</script>
+
+
+<input type="text" size="32" name="usernameForm" value=""> <button onclick="setCookie('usernameForm', this.value)">Submit</button> 
+
+
+
+<br><hr><br>
+<div id="pistas">
+<h2>Pistas <span id="idPista">0</span>/3 (<a href="#" onclick="mostrarPista()">mostrar</a>)</h2>
+<!-- Las pistas han sido codificadas en base64 para evitar que las leas accidentalmente mirando el código de la web. Siente libre de consultarlas si te encuentras atascado, todos necesitamos ayuda de vez en cuando. -->
+<ol>
+<li id="pista1" style="display:none">RXN0YSBlcyBzaW1wbGUsIHNlZ3VybyBxdWUgZW4gR29vZ2xlIHB1ZWRlcyBlbmNvbnRyYXIgYWxnbyBxdWUgdGUgc2VhIMO6dGlsLg==</li>
+
+<li id="pista2" style="display:none">SW5mw7NybWF0ZSBhY2VyY2EgZGUgbG9zIGV2ZW50b3MgZW4gSmF2YXNjcmlwdA==</li>
+
+<li id="pista3" style="display:none">Jmx0c3ZnJmd0</li>
+</ol></div>
+
+</body>
+</html> 

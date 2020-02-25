@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hola mundo | XSS challenge</title>
+<head>
+<body>
+
+<br>
+
+<h1 id="holamundo"></h1>
+
+<script>
+    holamundo.innerHTML = "¡Hola " + (new URL(location).searchParams.get('mundo') || "mundo!")
+</script>
+
+
+<h2>Pistas <span id="idPista">0</span>/3 (<a href="#" onclick="mostrarPista()">mostrar</a>)</h2>
+<div id="pistas">
+<!-- Las pistas han sido codificadas en base64 para evitar que las leas accidentalmente mirando el código de la web. Siente libre de consultarlas si te encuentras atascado, todos necesitamos ayuda de vez en cuando. -->
+<ol>
+<li id="pista1" style="display:none">RXN0YSBlcyBzaW1wbGUsIHNlZ3VybyBxdWUgZW4gR29vZ2xlIHB1ZWRlcyBlbmNvbnRyYXIgYWxnbyBxdWUgdGUgc2VhIMO6dGlsLg==</li>
+
+<li id="pista2" style="display:none">SW5mw7NybWF0ZSBhY2VyY2EgZGUgbG9zIGV2ZW50b3MgZW4gSmF2YXNjcmlwdA==</li>
+
+<li id="pista3" style="display:none">Jmx0c3ZnJmd0</li>
+</ol>
+</div>
+
+
+<script>
+function mostrarPista(){
+var pista1 = document.getElementById("pista1");
+var pista2 = document.getElementById("pista2");
+var pista3 = document.getElementById("pista3");
+
+
+if (pista1.style.display == "none"){
+pista1.style.display = ""
+document.getElementById("idPista").innerHTML = "1";
+document.getElementById("pista1").innerHTML = b64DecodeUnicode(document.getElementById("pista1").textContent); 
+}
+else if(pista2.style.display == "none"){
+pista2.style.display = ""
+document.getElementById("idPista").innerHTML = "2"; 
+document.getElementById("pista2").innerHTML = b64DecodeUnicode(document.getElementById("pista2").textContent); 
+}
+else if(pista3.style.display == "none"){
+pista3.style.display = ""
+document.getElementById("idPista").innerHTML = "3";
+document.getElementById("pista3").innerHTML = b64DecodeUnicode(document.getElementById("pista3").textContent); 
+}
+}
+
+function b64DecodeUnicode(str) {
+    // Going backwards: from bytestream, to percent-encoding, to original string.
+    return decodeURIComponent(atob(str).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+}
+</script>
+
+</body>
+</html> 

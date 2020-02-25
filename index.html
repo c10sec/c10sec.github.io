@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html>
+
+	<head>
+		<title>XSS-mania</title>
+		<meta charset="UTF-8">
+		<style>
+			body {
+  				background-color: #1F1B24;
+			}
+
+			h1, h2 {
+				color: green;
+				font-family: "Lucida Console", Monaco, monospace;
+				text-align: center;
+			}
+
+			#pistas{
+				color: green;
+				font-family: "Lucida Console", Monaco, monospace;
+				text-align: center;
+			}
+			p {
+				color:green;
+				font-family: "Lucida Console", Monaco, monospace;					
+				font-size:20px;
+			}
+			a {
+				text-decoration: none;
+			}
+			li {
+				font-size: 20px;
+				list-style-type: none;
+			}
+
+			#xsslogo {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#categorycontainer {
+				background-color: #483f54;
+				width: 50%;
+				border-radius: 10px;
+				margin-left: 5%;
+				margin-bottom: 4px;
+				padding-top: 1px;
+				padding-bottom: 1px;
+				padding-left: 10px;				
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<img id="xsslogo" src="xssmania_logo.png" alt="logo">
+			<br><br>	
+
+		<div id="categorycontainer">
+			<p>Retos faciles</p>
+			<ul>
+				<li><a href="challenge1.html">¡Hola mundo!</a></li>
+				<li><a href="challenge2.html">Who is Joe?</a></li>
+				<li><a href="challenge3.html">Big brother</a></li>
+				<li><a href="challenge4.html">Redrum</a></li>
+
+			</ul>
+		</div>
+
+		<div id="categorycontainer">
+			<p>Retos medios</p>
+			<ul>
+				<li><a href="challenge5.html">IRC</a></li>
+			</ul>
+		</div>
+
+		<div id="categorycontainer">
+			<p>Retos difíciles</p>
+			<ul>
+				<li>Proximamente...</li>
+			</ul>
+		</div>
+
+
+	</body>
+</html> 
