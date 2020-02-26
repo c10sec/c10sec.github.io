@@ -15,22 +15,30 @@
 				text-align: center;
 			}
 
-			#pistas{
-				color: green;
-				font-family: "Lucida Console", Monaco, monospace;
-				text-align: center;
-			}
 			p {
 				color:green;
-				font-family: "Lucida Console", Monaco, monospace;					
-				font-size:20px;
+				font-family: "Lucida Console", Monaco, monospace;
+				font-size:30px;
+				font-weight: 900;
+				margin-left: 22px;
+				margin-bottom: 0;
 			}
 			a {
 				text-decoration: none;
+				color: green;
+				font-family: "Lucida Console", Monaco, monospace;
+				font-weight: 900;
+
+			}
+			a:hover{
+				color: red;
 			}
 			li {
 				font-size: 20px;
 				list-style-type: none;
+				margin-bottom: 3px;
+				color:green;
+				font-family: "Lucida Console", Monaco, monospace;
 			}
 
 			#xsslogo {
@@ -38,15 +46,30 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
+			#rules_logo{
+				margin-left: 400px;
+			}
+			#rules_panel{
+				background-color: #483f54;
+				width: 1000px;/**/
+				border-radius: 10px;
+				padding-bottom: 4px;
+				display:inline-block;
+			}
 			#categorycontainer {
 				background-color: #483f54;
-				width: 50%;
+				width: 500px;/**/
 				border-radius: 10px;
-				margin-left: 5%;
+				margin-left: 50px;/**/
+				margin-right: 10px;
 				margin-bottom: 4px;
 				padding-top: 1px;
 				padding-bottom: 1px;
-				padding-left: 10px;				
+				padding-left: 10px;	
+				
+			}
+			#categories{
+				display:inline-block;			
 			}
 
 		</style>
@@ -54,33 +77,45 @@
 
 	<body>
 		<img id="xsslogo" src="xssmania_logo.png" alt="logo">
-			<br><br>	
+		<br><br>	
 
-		<div id="categorycontainer">
-			<p>Retos faciles</p>
-			<ul>
-				<li><a href="challenge1.html">¡Hola mundo!</a></li>
-				<li><a href="challenge2.html">Who is Joe?</a></li>
-				<li><a href="challenge3.html">Big brother</a></li>
-				<li><a href="challenge4.html">Redrum</a></li>
 
-			</ul>
+		<div id="categories">
+			<div id="categorycontainer">
+				<p>Retos faciles</p>
+				<ul>
+					<li><a href="challenge1.html">¡Hola mundo!</a></li>
+					<li><a href="challenge2.html">Who is Joe?</a></li>
+					<li><a href="challenge3.html">Big brother</a></li>
+					<li><a href="challenge4.html">Redrum</a></li>
+					<li><a href="challenge6.html">Batman</a></li>
+				</ul>
+			</div>
+
+			<div id="categorycontainer">
+				<p>Retos medios</p>
+				<ul>
+					<li><a href="challenge5.html">IRC (No funciona)</a></li>
+				</ul>
+			</div>
+
+			<div id="categorycontainer">
+				<p>Retos difíciles</p>
+				<ul>
+					<li>Proximamente...</li>
+				</ul>
+			</div>
 		</div>
 
-		<div id="categorycontainer">
-			<p>Retos medios</p>
+		<div id="rules_panel">
+			<img id="rules_logo" src="rules_logo1.png" alt="rules">
 			<ul>
-				<li><a href="challenge5.html">IRC</a></li>
+				<li>-El reto consiste en hacer un alert("XSSMANIA") en cada nivel.</li>
+				<li>-El alert debe aparecer en la ventana de forma automática sin necesidad de ninguna interacción del usuario.</li>
+				<li>-Está prohibido usar cualquier tipo de escaner o software que automatice la resolución del reto.</li>
+				<li>-El uso de motores de búsqueda está permitido para buscar documentación pero no para buscar las soluciones de los retos. Por favor, no hagas spoilers. El objetivo de los retos es aprender, no solucionarlos a toda costa.</li>
 			</ul>
 		</div>
-
-		<div id="categorycontainer">
-			<p>Retos difíciles</p>
-			<ul>
-				<li>Proximamente...</li>
-			</ul>
-		</div>
-
 
 	</body>
 </html> 
