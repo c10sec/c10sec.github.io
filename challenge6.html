@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>𝗕𝗔𝗧𝗠𝗔𝗡 || 𝗫𝗦𝗦 𝗖𝗛𝗔𝗟𝗟𝗘𝗡𝗚𝗘</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="mostrarPistas.js"></script>
+<head>
+<body>
+
+<br>
+
+<h1>BATMAN</h1>
+
+<div id="heroe"></div>
+
+<script>
+    	var input = (new URL(location).searchParams.get('heroe') || 'Clark Kent').replace(/[\!\-\/\#\&\;\%]/g, '_');
+    	var template = document.createElement('template');
+    	template.innerHTML = input;
+    	heroe.innerHTML = "<!-- <p> " + template.outerHTML + " </p> -->";
+</script>
+
+<br><hr><br>
+<div id="pistas">
+<h2>Pistas <span id="idPista">0</span>/3 (<a href="#" onclick="mostrarPista()">mostrar</a>)</h2>
+<!-- Las pistas han sido codificadas en base64 para evitar que las leas accidentalmente mirando el código de la web. Siente libre de consultarlas si te encuentras atascado, todos necesitamos ayuda de vez en cuando. -->
+<ol>
+<li id="pista1" style="display:none">QnVzY2EgZW4gZ29vZ2xlOiBtdXRhbnQgWFNT</li>
+
+<li id="pista2" style="display:none">a</li>
+
+<li id="pista3" style="display:none">a</li>
+</ol>
+</div>
+
+</body>
+</html> 
