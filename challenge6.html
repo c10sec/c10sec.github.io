@@ -16,7 +16,7 @@
 <div id="heroe"></div>
 
 <script>
-    	var input = (new URL(location).searchParams.get('heroe') || 'Clark Kent').replace(/[\!\-\/\#\&\;\%]/g, '_');
+    	var input = (new URL(location).searchParams.get('heroe') || 'Bruce Wayne').replace(/[\!\-\/\#\&\;\%]/g, '_');
     	var template = document.createElement('template');
     	template.innerHTML = input;
     	heroe.innerHTML = "<!-- <p> " + template.outerHTML + " </p> -->";
