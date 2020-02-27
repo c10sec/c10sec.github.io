@@ -1,4 +1,4 @@
-# XSS-mania
+# [XSS-mania](https://c10sec.github.io/)
 Web en español de retos sobre XSS (Cross Site Scripting)
 
 # Propósito de los retos
@@ -12,7 +12,7 @@ El objetivo de cada nivel es conseguir hacer un alert(101) sin necesidad de ning
 Para solucionar los retos está prohibido usar cualquier tipo de herramienta que automatice o identifique las vulnerabilidades en el código.
 Tambien está prohibido hacer spoiler de las soluciones, si necesitas ayuda puedes consultar las pistas que hay disponibles en algunos niveles (solo en los de categoría "Fácil") o contactar conmigo, que para algo soy el que ha diseñado estos retos.
 
-TW: @c10sec (https://twitter.com/c10sec)
+TW: [@c10sec](https://twitter.com/c10sec)
   
 Para acceder directamente a los retos deber ir a: https://c10sec.github.io/
 
